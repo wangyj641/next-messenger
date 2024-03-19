@@ -1,5 +1,5 @@
-### Real-time Messenger tool
-Developed with next.js, typescript, tailwindcss, react, Github authentication 
+# Real-time Messenger Tool
+Developed with next.js, typescript, tailwindcss, react, Github authentication, mongoDB, Prisma 
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
