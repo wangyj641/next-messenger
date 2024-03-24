@@ -1,5 +1,5 @@
-# Next Messenger
-A real-time messenger tool
+# next-messenger
+A real-time communication app
 
 Developed with next.js, typescript, TailwindCSS, react, Github authentication, mongoDB, Prisma 
 
@@ -19,10 +19,10 @@ Developed with next.js, typescript, TailwindCSS, react, Github authentication, m
 - User profile customization and settings
 - Creating and managing chat rooms and channels
 
-## Getting Started
+### Getting Started
 
-### Setup .env file
-
+##### Setup .env file
+Register github OAuth app and config .env
 
 ```js
 DATABASE_URL=
@@ -30,17 +30,16 @@ NEXTAUTH_SECRET=
 
 GITHUB_ID=
 GITHUB_SECRET=
-
 ```
 
-### Setup Prisma
+##### Setup Prisma
 
 ```shell
 npx prisma db push
 
 ```
 
-### Start the app
+##### Start the app
 
 ```shell
 npm run dev
