@@ -3,7 +3,7 @@
 import axios from "axios";
 import { signIn, useSession } from 'next-auth/react';
 import { useCallback, useEffect, useState } from 'react';
-import { BsGithub, BsGoogle } from 'react-icons/bs';
+import { BsGithub, BsGoogle  } from 'react-icons/bs';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import { useRouter } from "next/navigation";
 
@@ -22,7 +22,7 @@ const AuthForm = () => {
 
   useEffect(() => {
     if (session?.status === 'authenticated') {
-      router.push('/users');
+      router.push('/conversations')
     }
   }, [session?.status, router]);
 
@@ -38,7 +38,7 @@ const AuthForm = () => {
     register,
     handleSubmit,
     formState: {
-      errors
+      errors,
     }
   } = useForm<FieldValues>({
     defaultValues: {
